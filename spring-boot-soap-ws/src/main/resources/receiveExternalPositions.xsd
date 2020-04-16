@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/receiveExternalPositions"
+	xmlns:tns="http://www.example.org/receiveExternalPositions"
+	elementFormDefault="qualified">
+	
+		<xsd:element name="receiveExternalPositionsRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="userName" type="xsd:string" />
+				<xsd:element name="key" type="xsd:string" />
+				<xsd:element name="vehicleAlias" type="xsd:string" />
+				<xsd:element name="vehicleId" type="xsd:string" />
+				<xsd:element name="event" type="xsd:string" />
+				<xsd:element name="latitude" type="xsd:string" />
+				<xsd:element name="longitude" type="xsd:string" />
+				<xsd:element name="engineStatus" type="xsd:string" />
+				<xsd:element name="speed" type="xsd:string" />
+				<xsd:element name="genDateTime" type="xsd:string" />
+				<xsd:element name="recDateTime" type="xsd:string" />
+				<xsd:element name="reserved1" type="xsd:string" />
+				<xsd:element name="reserved2" type="xsd:string" />
+							</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+			<xsd:element name="receiveExternalPositionsResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="message" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>
